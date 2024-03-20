@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 // import fs from "fs";
 import { getReq } from '../src/methods/get-request'
 // import * as users from './users.json'
-// import { postReq } from '../src/methods/post-request'
+import { postReq } from '../src/methods/post-request'
 // import { putReq } from '../src/methods/put-request'
 // import { deleteReq } from '../src/methods/delete-request'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -23,9 +23,9 @@ const server = http.createServer((req: any, res: any) => {
         case "GET":
             getReq(req, res);
             break;
-        // case "POST":
-        //     postReq(req, res);
-        //     break;
+        case "POST":
+            postReq(req, res);
+            break;
         // case "PUT":
         //     putReq(req, res);
         //     break;
