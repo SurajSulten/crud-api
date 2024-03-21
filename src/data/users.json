@@ -1,14 +1,1 @@
-{
-    "users": [
-        {},
-        {
-            "username": "myUserName"
-        },
-        {
-            "username": "shaxx"
-        },
-        {
-            "username": "suroj"
-        }
-    ]
-}
+[{},{"username":"myUserName"},{"username":"shaxx"},{"username":"suroj"},{"id":"4a91d53e-e3f1-4a96-be9e-60ce7fee1bd8"},{"id":"80f9875c-5bfd-4ca4-8d19-3e496590d9dd"}]
