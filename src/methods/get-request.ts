@@ -1,6 +1,6 @@
 import fs  from 'fs';
 
-export function getReq(res: any, req: any): void {
+export function getReq(req: any, res: any): void {
     const dataJson = fs.readFileSync("src/data/users.json", { encoding: "utf-8" });
     const data = JSON.parse(dataJson);
     const baseUrl = req.url.substring(0, req.url.lastIndexOf("/") + 1);
@@ -10,7 +10,7 @@ export function getReq(res: any, req: any): void {
     if(req.url === "/api/users") {
         res.statusCode = 200;
         res.setHeader("Content-type", "application/json");
-        req.write(JSON.stringify({ users: data.users }));
+        res.write(JSON.stringify({ users: data.users }));
         res.end();
     // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     } else if(!regexV4.test(id)) {
