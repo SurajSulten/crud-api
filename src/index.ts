@@ -13,7 +13,7 @@ dotenv.config();
 const PORT = process.env.PORT ?? 3000;
 
 // create a server object:
-const server = http.createServer((req: any, res: any) => {});
+const server = http.createServer();
 
 server.on(
     "request",
